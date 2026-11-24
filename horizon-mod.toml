@@ -1,0 +1,20 @@
+# Better Advanced Tooltips for Horizon — one flat SDK package (mod API 0.2).
+#
+# Ported from Better Advanced Tooltips 2101.1.0-build.5 (latvian.dev, MIT). The mod adds
+# extra lines to item tooltips while advanced tooltips (F3+H) are on: a fuel-value line
+# (Shift) and a data-component line per patched component (Alt). The pin exposes a
+# readable tooltip-line hook and the exact Shift/Alt modifier state, so both families
+# are real API reads, not invented data.
+id = "betteradvancedtooltips"
+name = "Better Advanced Tooltips"
+version = "0.1.0"
+description = """Adds advanced lines to item tooltips, from Better Advanced Tooltips 2101.1.0-build.5: the fuel value of a burnable item (ticks, seconds and items smelted) with Shift held, and one line per patched data component with Alt held, both only while F3+H advanced tooltips are on. The tag-icon family of the original is not ported: this pin can test tag membership but cannot enumerate every tag an item belongs to."""
+authors = ["latvian.dev (upstream)", "Horizon native mod contributors"]
+api = "0.2"
+side = "client"
+capabilities = ["registries"]
+
+[native]
+game = "26.3"
+horizon = "0a875da91dbb0fdcb7ba8c42c11341aa229af51a"
+mixins = "e59da9094f0c2fdda6c627fe9eff22dec6a906f0"
